@@ -25,8 +25,8 @@
 		 */
 		public function update($id, $data)
 		{
-			$this->db->update("url", $data);
-			$this->db->where('id',$id);
+			$this->db->where('id', $id);
+			$this->db->update('url', $data);
 			return true;
 		}
 
